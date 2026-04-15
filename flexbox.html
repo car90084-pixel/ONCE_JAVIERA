@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Perfil Manuela</title>
+
+<style>
+
+/* Reset */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* Tarjeta */
+.card{
+  background:white;
+  width:340px;
+  border-radius:20px;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+}
+
+/* Header */
+.header{
+  background:#8643b3;
+  height:100px;
+}
+
+/* Contenido */
+.content{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:20px;
+  gap:15px;
+}
+
+/* Avatar */
+.avatar{
+  width:110px;
+  height:110px;
+  border-radius:50%;
+  border:4px solid white;
+  margin-top:-60px;
+  object-fit:cover;
+}
+
+/* Nombre */
+.name{
+  text-align:center;
+}
+
+.name h2{
+  font-size:20px;
+}
+
+.name span{
+  color:gray;
+  font-size:14px;
+}
+
+/* Bio */
+.bio{
+  text-align:center;
+  font-size:14px;
+  color:#555;
+}
+
+/* Stats */
+.stats{
+  width:100%;
+  display:flex;
+  justify-content:space-around;
+}
+
+.stat{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.stat strong{
+  font-size:16px;
+}
+
+.stat p{
+  font-size:12px;
+  color:gray;
+}
+
+/* Botones */
+.buttons{
+  width:100%;
+  display:flex;
+  gap:10px;
+}
+
+.buttons button{
+  flex:1;
+  padding:10px;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+.follow{
+  background:#ea0c0c;
+  color:white;
+}
+
+.message{
+  background:#eee;
+}
+
+/* Galería */
+.gallery{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  padding:15px;
+  justify-content:center;
+}
+
+.gallery img{
+  width:95px;
+  height:95px;
+  border-radius:10px;
+  object-fit:cover;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+  <div class="header"></div>
+
+  <div class="content">
+
+    <img src="https://picsum.photos/150/150" class="avatar">
+
+    <div class="name">
+      <h2>Manuela Cardona</h2>
+      <span>@Manucar.saldarriaga</span>
+    </div>
+
+    <div class="bio">
+      Soy apasionada por el maquillaje, me encanta la música y conocer lugares nuevos.
+    </div>
+
+    <div class="stats">
+      <div class="stat">
+        <strong>2</strong>
+        <p>Proyectos</p>
+      </div>
+      <div class="stat">
+        <strong>340</strong>
+        <p>Seguidores</p>
+      </div>
+      <div class="stat">
+        <strong>180</strong>
+        <p>Siguiendo</p>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button class="follow">Seguir</button>
+      <button class="message">Mensaje</button>
+    </div>
+
+  </div>
+
+  <div class="gallery">
+    <img src="https://picsum.photos/100?makeup">
+    <img src="https://picsum.photos/100?landscape">
+    <img src="https://picsum.photos/100?animal">
+    <img src="https://picsum.photos/100?beauty">
+    <img src="https://picsum.photos/100?nature">
+    <img src="https://picsum.photos/100?pet">
+  </div>
+
+</div>
+
+</body>
+</html>
