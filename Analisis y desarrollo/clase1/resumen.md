@@ -1,238 +1,290 @@
-Resumen — Análisis y Diseño de Software
+# Análisis y Diseño de Software
 
-Introducción
+## Introducción
 
-El análisis y diseño de software son etapas fundamentales en el desarrollo de sistemas informáticos. Antes de programar, es necesario comprender el problema, identificar las necesidades de los usuarios y planificar la solución adecuada.
+El análisis y diseño de software es una disciplina que permite planificar y organizar el desarrollo de sistemas informáticos antes de comenzar la programación. Su objetivo es comprender las necesidades del usuario y diseñar una solución adecuada.
 
-⸻
+---
 
-1. Importancia del Análisis y Diseño
+# Importancia del Análisis y Diseño
 
-¿Qué es el análisis?
+Antes de construir cualquier sistema es necesario entender el problema y planificar la solución.
 
-Es el proceso de comprender el problema que se desea resolver. Permite identificar:
+## Análisis
 
-* Usuarios del sistema.
-* Necesidades y objetivos.
-* Información requerida.
-* Restricciones de tiempo, presupuesto o normativas.
+El análisis consiste en identificar:
 
-¿Qué es el diseño?
+- Necesidades de los usuarios.
+- Objetivos del sistema.
+- Restricciones existentes.
+- Información que se debe manejar.
 
-Es la planificación de la solución antes de construirla.
+### Preguntas clave
 
-Incluye:
+- ¿Quién utilizará el sistema?
+- ¿Qué necesita hacer?
+- ¿Qué información requiere?
+- ¿Qué limitaciones existen?
 
-* Arquitectura del sistema.
-* Organización de módulos.
-* Tecnologías a utilizar.
-* Diseño de interfaces.
+## Diseño
 
-Idea principal
+El diseño consiste en planificar la solución.
 
-El análisis define qué se va a construir y el diseño define cómo se va a construir.
+### Aspectos del diseño
 
-Regla 1-10-100
+- Arquitectura del sistema.
+- Estructura de módulos.
+- Interfaces de usuario.
+- Tecnologías a utilizar.
 
-Corregir errores cuesta más a medida que avanza el proyecto:
+## Diferencia principal
 
-Fase	Costo
-Análisis	$1
-Diseño	$10
-Programación	$100
-Producción	$1000+
+**Análisis:** define qué se construirá.
 
-⸻
+**Diseño:** define cómo se construirá.
 
-2. Ciclo de Vida del Software
+---
 
-El ciclo de vida del software representa las etapas por las que pasa un sistema desde su creación hasta su retiro.
+# Regla del 1-10-100
 
-Fases principales
+Mientras más tarde se detecte un error, más costoso será corregirlo.
 
-1. Análisis de requerimientos
+| Fase | Costo aproximado |
+|-------|------------------|
+| Análisis | $1 |
+| Diseño | $10 |
+| Programación | $100 |
+| Producción | $1000+ |
 
-Se identifican las necesidades del usuario.
+---
 
+# Ciclo de Vida del Software
+
+El ciclo de vida representa todas las etapas por las que pasa un sistema.
+
+## 1. Análisis de Requerimientos
+
+Se identifican las necesidades de usuarios y clientes.
+
+### Resultado
+
+Documento de requerimientos.
+
+## 2. Diseño
+
+Se define la estructura del sistema.
+
+### Resultado
+
+- Diagramas.
+- Modelos.
+- Prototipos.
+
+## 3. Implementación
+
+Se desarrolla el código fuente.
+
+### Resultado
+
+Software funcional.
+
+## 4. Pruebas
+
+Se verifica que el sistema funcione correctamente.
+
+### Objetivos
+
+- Detectar errores.
+- Validar funcionalidades.
+- Garantizar calidad.
+
+## 5. Despliegue
+
+El software es instalado para los usuarios finales.
+
+## 6. Mantenimiento
+
+Se realizan:
+
+- Correcciones.
+- Mejoras.
+- Actualizaciones.
+
+---
+
+# Metodologías Estructuradas
+
+Son metodologías basadas en una planificación detallada.
+
+## Modelo Cascada
+
+Las etapas se realizan en orden secuencial.
+
+### Fases
+
+1. Análisis
 2. Diseño
-
-Se crean diagramas, arquitecturas y prototipos.
-
-3. Implementación
-
-Los desarrolladores escriben el código.
-
+3. Programación
 4. Pruebas
-
-Se verifican errores y el correcto funcionamiento.
-
 5. Despliegue
 
-El software se entrega al usuario final.
+### Ventajas
 
-6. Mantenimiento
+- Organización clara.
+- Buena documentación.
+- Fácil administración.
 
-Se corrigen errores y se agregan mejoras.
+### Desventajas
 
-⸻
+- Rigidez.
+- Cambios costosos.
+- Retroalimentación tardía.
 
-3. Metodologías Estructuradas
+## Modelo en V
 
-Son metodologías tradicionales que se basan en una planificación detallada desde el inicio.
+Relaciona cada fase de desarrollo con una fase de pruebas.
 
-Modelo Cascada
-
-Las fases se ejecutan una después de otra:
-
-Análisis → Diseño → Programación → Pruebas → Despliegue
-
-Ventajas
-
-* Fácil de administrar.
-* Documentación completa.
-* Buena para proyectos con requisitos estables.
-
-Desventajas
-
-* Poca flexibilidad.
-* Cambios costosos.
-* El cliente ve resultados al final.
-
-Modelo en V
-
-Relaciona cada fase de desarrollo con una fase de pruebas correspondiente.
-
-Modelo Espiral
+## Modelo Espiral
 
 Combina desarrollo y análisis de riesgos mediante ciclos repetitivos.
 
-Cuándo utilizarlas
+---
 
-* Sistemas críticos.
-* Proyectos gubernamentales.
-* Bancos.
-* Hospitales.
-* Aviación.
+# Metodologías Ágiles
 
-⸻
+Permiten adaptarse rápidamente a los cambios.
 
-4. Metodologías Ágiles
+## Principios Ágiles
 
-Buscan adaptarse rápidamente a los cambios y entregar valor de forma continua.
+- Personas sobre procesos.
+- Software funcionando sobre documentación extensa.
+- Colaboración con el cliente.
+- Adaptación al cambio.
 
-Principios del Manifiesto Ágil
+## Scrum
 
-* Personas e interacciones sobre procesos.
-* Software funcionando sobre documentación extensa.
-* Colaboración con el cliente sobre contratos.
-* Respuesta al cambio sobre seguir un plan.
+### Roles
 
-Scrum
+- Product Owner.
+- Scrum Master.
+- Equipo de Desarrollo.
 
-Incluye:
+### Eventos
 
-* Sprints.
-* Daily Meetings.
-* Product Owner.
-* Scrum Master.
-* Equipo de desarrollo.
+- Sprint.
+- Daily Meeting.
+- Revisión.
+- Retrospectiva.
 
-Kanban
+## Kanban
 
-Utiliza tableros visuales para gestionar tareas:
+Utiliza tableros visuales para gestionar tareas.
 
-* Por hacer.
-* En proceso.
-* En pruebas.
-* Terminado.
+### Columnas
 
-XP (Extreme Programming)
+- Por hacer.
+- En proceso.
+- En pruebas.
+- Completado.
+
+## XP (Extreme Programming)
 
 Promueve:
 
-* Programación en parejas.
-* Desarrollo guiado por pruebas.
-* Refactorización continua.
-* Entregas frecuentes.
+- Programación en parejas.
+- Desarrollo guiado por pruebas.
+- Refactorización continua.
 
-Cuándo utilizarlas
+---
 
-* Startups.
-* Aplicaciones móviles.
-* Productos innovadores.
-* Proyectos con cambios constantes.
+# Requerimientos
 
-⸻
+Los requerimientos describen lo que un sistema debe hacer y las restricciones que debe cumplir.
 
-5. Comparación entre Metodologías
+## Requerimientos Funcionales
 
-Aspecto	Estructuradas	Ágiles
-Planificación	Inicial	Continua
-Cambios	Difíciles	Flexibles
-Documentación	Amplia	Mínima
-Cliente	Participación limitada	Participación constante
-Entregas	Finales	Frecuentes
-Riesgo	Mayor si hay cambios	Menor por retroalimentación continua
+Describen acciones del sistema.
 
-⸻
+### Ejemplos
 
-6. Requerimientos
+- Registrar usuarios.
+- Generar reportes.
+- Consultar información.
 
-Definición
+## Requerimientos No Funcionales
 
-Son las características, funciones y restricciones que debe cumplir un sistema.
+Describen características de calidad.
 
-Tipos
+### Ejemplos
 
-Requerimientos funcionales
+- Respuesta menor a 2 segundos.
+- Disponibilidad 24/7.
+- Seguridad de datos.
 
-Describen lo que el sistema debe hacer.
+---
 
-Ejemplos:
-
-* Registrar usuarios.
-* Generar reportes.
-* Realizar pagos.
-
-Requerimientos no funcionales
-
-Describen cómo debe comportarse el sistema.
-
-Ejemplos:
-
-* Responder en menos de 2 segundos.
-* Estar disponible 24/7.
-* Garantizar seguridad de datos.
-
-Características SMART
+# Características SMART
 
 Un buen requerimiento debe ser:
 
-* Específico.
-* Medible.
-* Alcanzable.
-* Relevante.
-* Temporal.
+## S – Specific
 
-Obtención de requerimientos
+Específico.
 
-Se realiza mediante:
+## M – Measurable
 
-* Entrevistas.
-* Encuestas.
-* Observación.
-* Talleres.
-* Análisis documental.
-* Prototipos.
+Medible.
 
-⸻
+## A – Achievable
 
-Conclusiones
+Alcanzable.
 
-* El análisis y diseño son fundamentales para el éxito de cualquier proyecto de software.
-* Un buen análisis reduce errores y costos.
-* El ciclo de vida del software organiza el desarrollo en etapas.
-* Las metodologías estructuradas ofrecen control y documentación.
-* Las metodologías ágiles proporcionan flexibilidad y adaptación.
-* Los requerimientos son la base sobre la cual se construye todo el sistema.
-* Una planificación adecuada aumenta significativamente las probabilidades de éxito del proyecto.
+## R – Relevant
+
+Relevante.
+
+## T – Time-bound
+
+Limitado en el tiempo.
+
+---
+
+# Obtención de Requerimientos
+
+Los requerimientos pueden obtenerse mediante:
+
+## Entrevistas
+
+Conversaciones con usuarios.
+
+## Encuestas
+
+Recolección de opiniones.
+
+## Observación
+
+Análisis del trabajo real.
+
+## Talleres
+
+Sesiones colaborativas.
+
+## Análisis de Documentos
+
+Revisión de leyes, normas y manuales.
+
+## Prototipos
+
+Modelos preliminares del sistema.
+
+---
+
+# Conclusiones
+
+- El análisis permite comprender el problema.
+- El diseño permite planificar la solución.
+- El ciclo de vida organiza el desarrollo del software.
+- Las metodologías estructuradas ofrecen control y documentación.
+- Las metodologías ágiles proporcionan flexibilidad.
+- Los requerimientos son la base de todo proyecto.
+- Una buena planificación aumenta las probabilidades de éxito.
